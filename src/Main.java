@@ -41,7 +41,7 @@ public class Main {
                 case 2 -> player.printStatus();
                 case 3 -> {
                     System.out.println("Quitting the game...");
-                    break;
+                    player.health = 0; // Set health to 0 to end the game loop
                 }
                 default -> System.out.println("Invalid choice. Please try again.");
             }
