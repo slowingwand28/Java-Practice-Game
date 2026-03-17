@@ -18,6 +18,7 @@ public class Main {
         String playerName = scanner.nextLine();
         Player player = new Player(playerName, 100, 15);
 
+        System.out.println("Secure the Halo Ring by defeating the Covenant scouts!");
         gameLoop(player);
 
         System.out.println("Game Over. Thanks for playing!");
@@ -58,8 +59,9 @@ public class Main {
                 }
                 default -> System.out.println("Invalid choice. Please try again.");
             }
+            // Check if the player has defeated enough enemies to win the game
             if (enemiesDefeated >= 5) {
-                System.out.println("Congratulations! You have secured the ring!");
+                System.out.println("Well done, Spartan! You have secured the ring!");
                 return; // Exit the game loop
             }
         }
@@ -69,7 +71,7 @@ public class Main {
     public static boolean explore(Player player) {
         System.out.println("You explore the ring...");
 
-        // 70% chance to encounter an alien
+        // 20% chance to find an item, 50% chance to encounter an alien, 30% chance to find nothing
         int encounterChance = random.nextInt(100);
         if (encounterChance <= 20) {
             System.out.println("You found a Medkit!");
