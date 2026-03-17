@@ -1,4 +1,4 @@
-# Halo Ring Defense Game
+# Java Practice Game
 
 A halo themed text-based Java game where you take on the role of a Spartan soldier defending the Halo Ring from Covenant forces. Explore the ring, encounter different alien species with varying difficulty levels, and defeat enemies to secure the ring. Manage your health with collectible items and engage in strategic combat.
 
