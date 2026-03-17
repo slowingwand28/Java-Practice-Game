@@ -1,3 +1,10 @@
+// This class represents an item in the game
 public class Item {
-    // This class represents an item in the game
+    String name;
+    int healAmount;
+
+    public Item(String name, int healAmount) {
+        this.name = name;
+        this.healAmount = healAmount;
+    }
 }
